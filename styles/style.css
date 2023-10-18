@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+
+}
+
+body {
+    background-color: rgba(28, 187, 196, 0.30);
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+}
+
+header {
+    width: 100vw;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #6100FF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    height: 2.8125rem;
+    margin: .3125rem;
+}
+
+.navbar h1 {
+    color: #fff;
+    margin: 0px 40px 0px 0px;
+}
+
+.avatar_perfil{
+    background-color: #ddd;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+   left: 42%;
+
+}
+
+.search_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin: 60px auto;
+    padding: 0px 100px 0px 50px;
+    width: 64.9375rem;
+    height: 11.375rem;
+    background-color: #0B0033;
+    border-radius: 82px;
+}
+
+.search_title {
+    color: #fff;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.busqueda {
+    width: 705px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 15px 0px;
+    padding: 20px;
+}
+
+.search_btn {
+    background: #6100FF;
+    width: max-content;
+    border-radius: 15px;
+    gap: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.mic_btn {
+    color: #fff;
+    cursor: pointer;
+}
+
+.avatar {
+    height: 20.9375rem;
+    position: absolute;
+    left: 71%;
+
+}
+
+
+.btn_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+    gap: .875rem;
+}
+
+.btn_mod {
+    background-color: #6100FF;
+    width: 20rem;
+    height: 13.0625rem;
+    padding: .625rem;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.25);
+    font-size: larger;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn_mod img {
+    margin: 15px;
+}
+
+.video_feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.corner {
+    position: absolute;
+    top: 123px;
+    left: 3.4vw;
+}
+
+.avatar_text {
+    color: #fff;
+}
+
+
+
+.grid-wrapper {
+    position: relative;
+    float: right;
+    width: 88%;
+    max-height: 560px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable both-edges;
+    margin: auto;
+
+
+}
+
+.youtube-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.video-player {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.video-container img {
+    display: block;
+    border-radius: 20px;
+}
+
+.video-card {
+    border-radius: 20px;
+
+}
+
+iframe {
+    width: 14.25rem;
+    height: 24.545rem;
+    margin: 20px 40px;
+    border-radius: 10px;
+}
+
+.nav_menu {
+    display: none;
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+@media screen and (max-width :992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+
+
+    .btn_nav {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 0;
+    }
+
+    .btn_mod {
+        width: 15rem;
+        height: 3.5rem;
+    }
+
+    .search_bar input {
+        width: 20.9rem;
+
+    }
+
+    .avatar_dialog,
+    .avatar,
+    .avatar_div {
+        display: none;
+    }
+
+    .grid-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .video-container {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .video-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .video-card {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}

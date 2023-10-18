@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Video Feed</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./assets/img/Ed_logo_rectangle 1 (Traced).svg" alt="edvisto logo" height="45" id="logo">
+            <img src="./assets/img/avatar_perfil.png" alt="avatar perfil niño" height="35" class="avatar_perfil">
+            <h1>Inicio</h1>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <img src="./assets/img/crear_y_colaborar.svg" alt="icono crear">
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <img src="./assets/img/buscar_y_analizar.svg" alt="icono lupa">
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <img src="./assets/img/planear.svg" alt="icono planear">
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <img src="./assets/img/planear.svg" alt="icono planear">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="btn_nav">
+            <button class="btn_mod" type="button">
+                <img src="./assets/img/crear_y_colaborar.svg" alt="icono crear" height="70">
+                Crear y colaborar
+            </button>
+
+            <button class="btn_mod" type="button">
+                <img src="./assets/img/buscar_y_analizar.svg" alt="icono buscar" height="70">
+                Buscar y analizar
+            </button>
+            <button class="btn_mod" type="button">
+                <img src="./assets/img/planear.svg" alt="icono planear" height="70">
+                Planear y comunicar
+            </button>
+            <button class="btn_mod" type="button">
+                <img src="./assets/img/compartir.svg" alt="icono grupo" height="70">
+                Compartir y evaluar
+            </button>
+        </div>
+
+        <div class="search_and_vids">
+            <div class="search_section">
+
+                <h4 class="search_title">Loremipsumloremipsum</h4>
+
+                <div class="buscador">
+                    <input class="busqueda" type="search" name="search" aria-label="Search" x-webkit-speech id="tema">
+
+                    <img src="./assets/img/Voice.svg" alt="icono de microfono" class="mic_btn">
+
+
+                    <button type="button" class="search_btn" id="buttonAdd">
+                        <img src="./assets/img/lupa.svg" alt="lupa">
+                    </button>
+                </div>
+            </div>
+            <div class="video_feed">
+                <div class="grid-wrapper">
+                    <div class="video-grid"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/videofeed.js"></script>
+</body>
+
+</html>
