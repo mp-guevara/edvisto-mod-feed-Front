@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyDJ1MSBS6OPFZT-wqd5n9tAXHOD0iFT6qU';
+const apiKey = 'ApiKeyGoesHere';
 const maxResults = 9;
 const searchInput = document.getElementById('search_input');
 
