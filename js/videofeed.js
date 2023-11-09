@@ -1,4 +1,23 @@
-const apiKey = 'apiKeyGoesHere';
+
+//DESPLEGABLE
+let dropdownOpened = false
+function collapseDropdown() {
+    const dropdown = document.getElementById('dropdown')
+    const collpaseButton = document.getElementById('collpase-button')
+    dropdownOpened = !dropdownOpened
+    console.log(dropdown)
+    if (dropdownOpened) {
+        dropdown.classList.remove('hide')
+        collpaseButton.classList.add('fa-rotate-180')
+    } else {
+        dropdown.classList.add('hide')
+        collpaseButton.classList.remove('fa-rotate-180')
+    }
+}
+
+
+//API DE YOUTUBE
+const apiKey = 'AIzaSyDJ1MSBS6OPFZT-wqd5n9tAXHOD0iFT6qU';
 const maxResults = 9;
 const searchInput = document.getElementById('search_input');
 

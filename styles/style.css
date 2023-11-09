@@ -1,159 +1,189 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Urbanist', sans-serif;
 
+}
+
+:root {
+    --violet: #6100FF;
+    --tech: #0B0033;
+    --orange: #FF7000;
+    --caribe70: hsla(183, 75%, 44%, 0.7);
+    --white80: hsla(0, 0%, 100%, 0.8);
+    --caribe: hsla(183, 75%, 44%, 1);
+    --caribe30: hsla(183, 75%, 44%, 0.3);
+    --aqua30: #1CBBC44D;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgba(28, 187, 196, 0.30);
     overflow-x: hidden;
 
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--tech);
+
+}
+
+nav {
+    background: var(--caribe30);
+    block-size: 143.18px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 72.9px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo-edvisto {
+    width: 120.21px;
+    height: 73.18px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 222px;
+    width: 100%;
+}
+
+.icono-perfil {
+    width:61px;
+    height:61.26px;
+}
+
 main {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 19.0625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .0625rem;
 }
 
 header {
     width: 100vw;
 }
 
-.navbar {
-    width: 100%;
-    background-color: #6100FF;
+.bannermodulo {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+    max-inline-size: 1107px;
+    max-block-size: 368px;
+    margin: auto;
+    margin-top: 94.08px;
+    box-sizing: content-box;
 }
 
-
-.navbar img {
-    height: 2.8125rem;
-    margin: .3125rem;
-}
-
-.navbar h1 {
-    color: #fff;
-    margin: 0px 40px 0px 0px;
-}
-
-.btn_perfil {
-    border-radius: 80%;
-    cursor: pointer;
+.bienvenida {
+    background: var(--tech);
+    border-radius: 82px;
+    block-size: 95px;
+    inline-size: 820px;
+    color: white;
     position: relative;
-    left: 42%;
-    height: 50px;
-    margin-right: 3.875rem;
+    padding: 59.5px 100px 59.5px 50px;
+    z-index: 1;
+    left: 70px;
+
+
 }
 
-.nav_menu {
+#asistente {
+    position: relative;
+    z-index: 2;
+    right: 70px;
+    max-inline-size: 100%;
+
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28.8px;
+    margin: 0px 0px 28px 0px;
+    text-align: center;
+
+
+}
+
+.bienvenida p {
+    font-weight: 400;
+    margin: auto;
+}
+
+.notifications-panel {
+    margin-bottom: 90px;
+}
+
+#collpase-button {
+    display: none;
+    background-color: var(--aqua30);
+    width: 924px;
+    height: 124.02px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown {
+    background-color: var(--aqua30);
+    padding: 1.125rem;
+    margin: 20px 0px;
+    max-width: 51.9881rem;
+}
+
+.drop-title {
+    display: flex;
+    gap: 573px;
+}
+
+#califications {
+    display: flex;
+    gap: 35.9rem;
+}
+
+.drop-info{
+    display: flex;
+    gap: 660px;
+}
+.info{
+    display: flex;
+    gap: .125rem;
+    margin: 10px 0px;
+}
+
+.group{
+    height: 20px;
+}
+
+.project{
+    color: var(--tech);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.status{
+    color: var(--violet)
+}
+
+.collapse-drop {
     display: none;
 }
 
-.btn_nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 50px;
-    gap: .875rem;
-}
-
-.btn_mod {
-    background-color: #6100FF;
-    width: 320px;
-    max-width: 20rem;
-    height: 13.0625rem;
-    padding: .625rem;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.25);
-    font-size: larger;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.btn_mod img {
-    margin: 15px;
-}
-
-.search_and_vids{
-    margin-top: 0;
-}
-
-.search_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
-    margin: 60px auto;
-    padding: 0px 100px 0px 50px;
-    width: 51.5625rem;
-    height: 12.375rem;
-    background-color: #0B0033;
-    border-radius: 82px;
-}
-
-.search_title {
-    color: #fff;
-    text-align: center;
-    font-family: 'Urbanist', sans-serif;
-    font-style: normal;
-    font-size: 2rem;
-    line-height: normal;
-    margin-top: 20px;
-}
-
-.buscador {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-}
-
-.busqueda {
-    width: 33.6875rem;
-    height: 2.5rem;
-    border-radius: 30px;
-    margin: 15px 0px;
-    padding: 20px;
-}
-
-.search_btn {
-    background: #6100FF;
-    width: max-content;
-    border-radius: 15px;
-    gap: 10px;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-}
-
-.mic_btn {
-    color: #fff;
-    cursor: pointer;
-}
 
 .grid-wrapper {
-
     float: right;
     width: 52.75rem;
     max-height: 35rem;
@@ -163,6 +193,9 @@ header {
     margin: auto;
 }
 
+.video-feed {
+    margin-top: 1.25rem;
+}
 
 
 .video-grid {
@@ -194,254 +227,114 @@ iframe {
 
 
 @media screen and (max-width: 992px) {
-    main{
+    main {
         flex-direction: column;
     }
-    .btn_nav {
+
+    .bannermodulo {
+        max-inline-size: 600px;
+        max-block-size: 200px;
+        margin: 2.1875rem;
+    }
+
+    .bienvenida {
+        left: 0rem;
+    }
+
+    #asistente {
         display: none;
     }
 
-    .search_section {
-        margin: 20px 0;
-        width: auto;
+
+
+    .btn_perfil {
+        display: none;
     }
 
-    .search_title {
-        font-size: 1.5rem;
-    }
-
-    .buscador {
+    .drop-title {
         width: 100%;
-        max-width: 600px;
-        padding: 10px;
+        gap: 320px;
     }
-    .video_feed{
+
+    #califications {
+        width: 100%;
+        gap: 16rem;
+    }
+
+    .video_feed {
         width: 100%;
     }
 
     .grid-wrapper {
         width: 100%;
-        background-color: #1CBBC4;
+        background-color: var(--caribe);
 
-    }
-
-   .video-grid{
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-   }
-
-
-    iframe {
-    width: 44%;
-    max-width: 100%;
-    height: 250px;
-    margin: 10px 0;
-    border-radius: 10px;
-    } 
-}
-
-
-/*
-
-header {
-    width: 100vw;
-}
-
-.navbar {
-    width: 100%;
-    background-color: #6100FF;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar img {
-    height: 2.8125rem;
-    margin: .3125rem;
-}
-
-.navbar h1 {
-    color: #fff;
-    margin: 0px 40px 0px 0px;
-}
-
-.btn_perfil{
-    border-radius: 80%;
-    cursor: pointer;
-    position: relative;
-    left: 42%;
-    height: 50px;
-}
-
-
-
-.search_title {
-    color: #fff;
-    text-align: center;
-    font-family: 'Urbanist', sans-serif;
-    font-style: normal;
-    font-size: 2rem;
-    line-height: normal;
-    margin-top: 20px;
-}
-
-.buscador {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-}
-
-.busqueda {
-    width: 705px;
-    height: 40px;
-    border-radius: 30px;
-    margin: 15px 0px;
-    padding: 20px;
-}
-
-.search_btn {
-    background: #6100FF;
-    width: max-content;
-    border-radius: 15px;
-    gap: 10px;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-}
-
-.mic_btn {
-    color: #fff;
-    cursor: pointer;
-}
-
-.btn_nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 50px;
-    gap: .875rem;
-}
-
-.btn_mod {
-    background-color: #6100FF;
-    width: 20rem;
-    height: 13.0625rem;
-    padding: .625rem;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.25);
-    font-size: larger;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.btn_mod img {
-    margin: 15px;
-}
-
-.video_feed {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-
-.grid-wrapper {
-    position: relative;
-    float: right;
-    width: 52.75rem;
-    max-height: 560px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scrollbar-gutter: stable both-edges;
-    margin: auto;
-
-
-}
-
-.youtube-player {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.video-player {
-    border: 1px solid #ddd;
-    padding: 10px;
-}
-
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-
-
-.video-container img {
-    display: block;
-    border-radius: 20px;
-}
-
-.video-card {
-    border-radius: 20px;
-
-}
-
-iframe {
-    width: 14.25rem;
-    height: 24.545rem;
-    margin: 20px 40px;
-    border-radius: 10px;
-}
-
-.nav_menu {
-    display: none;
-}
-
-#logo {
-    margin-left: 10px;
-}
-
-@media screen and (max-width :992px) {
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar {
-        width: 100vw;
-    }
-
-    .btn_nav {
-        display: none;
-    }
-
-    .search_section {
-       width: auto;
-       margin: 20px 0px;
-    }
-
-    .buscador{
-        width: auto;
-    }
-
-    .grid-wrapper{
-        width: 25rem;
     }
 
     .video-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: auto;
     }
 
-} */
+
+    iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 500px;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bannermodulo {
+        max-inline-size: 330px;
+        max-block-size: 205px;
+        margin: 2.1875rem;
+    }
+
+    .bienvenida {
+        width: max-content;
+        padding: 30px;
+        height: auto;
+    }
+
+    #modulo {
+        display: none;
+    }
+
+    .profile {
+        justify-content: end;
+    }
+
+    nav {
+        gap: 6.875rem;
+        justify-content: center;
+    }
+
+    #logo-edvisto {
+        margin-left: 20px;
+    }
+
+    .icono-perfil{
+        height: 45px;
+    }
+    .dropdown{
+        width: min-content;
+        max-width: 360px;
+    }
+
+    .drop-title {
+        width: 100%;
+        gap: 12.625rem;
+    }
+    .drop-info{
+        gap: 245px;
+    }
+
+    #califications {
+        width: min-content;
+        gap: 12.5rem;
+    }
+
+
+}
