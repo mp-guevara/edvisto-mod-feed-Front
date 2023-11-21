@@ -96,9 +96,8 @@ header {
     padding: 59.5px 100px 59.5px 50px;
     z-index: 1;
     left: 70px;
-
-
 }
+
 
 #asistente {
     position: relative;
@@ -121,6 +120,7 @@ h3 {
 .bienvenida p {
     font-weight: 400;
     margin: auto;
+    text-align: center;
 }
 
 .notifications-panel {
@@ -332,6 +332,10 @@ iframe {
         display: none;
     }
 
+    .dropdown{
+        width:27.75rem;
+    }
+
     .drop-title {
         width: 100%;
         gap: 320px;
@@ -340,6 +344,15 @@ iframe {
     #califications {
         width: 100%;
         gap: 16rem;
+    }
+
+    .drop-info {
+        display: flex;
+        gap: 323px;
+    }
+
+    #title-d {
+        gap: 16.456249999999997rem;
     }
 
     .video_feed {
@@ -366,7 +379,7 @@ iframe {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .bannermodulo {
         max-inline-size: 330px;
         max-block-size: 205px;
@@ -377,6 +390,9 @@ iframe {
         width: max-content;
         padding: 30px;
         height: auto;
+    }
+    .bienvenida p {
+        text-align: center;
     }
 
     #modulo {
@@ -402,22 +418,76 @@ iframe {
 
     .dropdown {
         width: min-content;
-        max-width: 360px;
+        max-width: 300px;
     }
 
     .drop-title {
         width: 100%;
-        gap: 12.625rem;
+        gap: 9.625rem;
     }
 
     .drop-info {
-        gap: 245px;
+        gap: 190px;
     }
 
+    #title-d{
+        gap: 6.75rem;
+    }
+
+   
     #califications {
         width: min-content;
-        gap: 12.5rem;
+        gap: 8.5rem;
     }
 
 
+}
+
+@media screen and (max-width: 300px){
+    nav {
+        gap: 4.875rem;
+        justify-content: center;
+    }
+    #logo-edvisto {
+        margin-left: 0px;
+        height: 35px;
+    }
+    .bannermodulo {
+        max-inline-size: 231px;
+        max-block-size: 262px;
+        margin: 2.1875rem;
+    }
+    .bienvenida p {
+        font-weight: 400;
+        margin: auto;
+        text-align: center;
+    }
+    .notifications-panel {
+        margin-bottom: 40px;
+    }
+    .dropdown {
+        width: min-content;
+        max-width: 200px;
+    }
+    .drop-title {
+        width: 100%;
+        gap: 2.625rem;
+    }
+    .drop-info {
+        gap: 85px;
+    }
+    #title-d {
+        gap: 4.75rem;
+    }
+    #califications {
+        width: min-content;
+        gap: 1.9rem;
+    }
+    iframe {
+        width: 100%;
+        max-width: 90%;
+        height: 500px;
+        margin: 10px 10px;
+        border-radius: 10px;
+    }
 }
