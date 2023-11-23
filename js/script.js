@@ -1,27 +1,9 @@
-
-//DESPLEGABLE
-let dropdownOpened = false
-function collapseDropdown() {
-    const dropdown = document.getElementById('dropdown')
-    const collpaseButton = document.getElementById('collpase-button')
-    dropdownOpened = !dropdownOpened
-    console.log(dropdown)
-    if (dropdownOpened) {
-        dropdown.classList.remove('hide')
-        collpaseButton.classList.add('fa-rotate-180')
-    } else {
-        dropdown.classList.add('hide')
-        collpaseButton.classList.remove('fa-rotate-180')
-    }
-}
-
-
 //API DE YOUTUBE
 const apiKey = 'AIzaSyDJ1MSBS6OPFZT-wqd5n9tAXHOD0iFT6qU';
 const maxResults = 9;
 const searchInput = document.getElementById('search_input');
 
-const randomSearchTerm = 'los planetas cuarto grado shorts';
+const randomSearchTerm = 'los planetas niños cuarto grado shorts';
 const maxVideoDuration = 'short';
 
 const videoGrid = document.querySelector('.video-grid');
@@ -71,6 +53,22 @@ function createYouTubePlayer(container, videoId) {
 }
 
 
+
+/* //DESPLEGABLE
+let dropdownOpened = false
+function collapseDropdown() {
+    const dropdown = document.getElementById('dropdown')
+    const collpaseButton = document.getElementById('collpase-button')
+    dropdownOpened = !dropdownOpened
+    console.log(dropdown)
+    if (dropdownOpened) {
+        dropdown.classList.remove('hide')
+        collpaseButton.classList.add('fa-rotate-180')
+    } else {
+        dropdown.classList.add('hide')
+        collpaseButton.classList.remove('fa-rotate-180')
+    }
+} */
 
 
 
