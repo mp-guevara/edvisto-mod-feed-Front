@@ -189,7 +189,7 @@ h3 {
 
 .grid-wrapper {
     float: right;
-    width: 57.75rem;
+    width: 64.75rem;
     max-height: 35rem;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -204,7 +204,7 @@ h3 {
 
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
     gap: 10px;
     justify-content: center;
 }
@@ -223,7 +223,7 @@ h3 {
 }
 
 iframe {
-    width: 14.25rem;
+    width: 16.25rem;
     height: 24.545rem;
     margin: 20px 40px;
     border-radius: 10px;
