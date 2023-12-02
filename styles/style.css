@@ -10,10 +10,12 @@
     --tech: #0B0033;
     --orange: #FF7000;
     --caribe70: hsla(183, 75%, 44%, 0.7);
+    --white: #FFFFFF;
     --white80: hsla(0, 0%, 100%, 0.8);
     --caribe: hsla(183, 75%, 44%, 1);
     --caribe30: hsla(183, 75%, 44%, 0.3);
     --aqua30: #1CBBC44D;
+    --caribe35: #1CBBC459;
 }
 
 body {
@@ -21,7 +23,9 @@ body {
     flex-direction: column;
     overflow-x: hidden;
 
+
 }
+
 
 h2 {
     font-size: 24px;
@@ -69,6 +73,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: .0625rem;
+    background: url(../assets/img/frame.png);
 }
 
 header {
@@ -82,7 +87,7 @@ header {
     max-inline-size: 1107px;
     max-block-size: 368px;
     margin: auto;
-    margin-top: 94.08px;
+    margin-top: 24.08px;
     box-sizing: content-box;
 }
 
@@ -90,12 +95,16 @@ header {
     background: var(--tech);
     border-radius: 82px;
     block-size: 95px;
-    inline-size: 820px;
+    inline-size: 870px;
     color: white;
     position: relative;
-    padding: 59.5px 100px 59.5px 50px;
+    padding: 27.5px 100px 70.5px 50px;
     z-index: 1;
     left: 70px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 
@@ -117,75 +126,146 @@ h3 {
 
 }
 
+
+
 .bienvenida p {
     font-weight: 400;
     margin: auto;
     text-align: center;
 }
 
-.notifications-panel {
-    margin-bottom: 90px;
-}
-
-#collpase-button {
-    display: none;
-    background-color: var(--aqua30);
-    width: 57.75rem;
-    height: 7.7512rem;
-}
-
-.dropdown {
-    background-color: var(--aqua30);
-    padding: 1.125rem;
-    margin: 20px 0px;
-    width: 57.75rem;
-    border-radius: .9375rem;
-}
-
-.drop-title {
+.wrapper {
     display: flex;
-    gap: 41.6563rem;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-#title-d {
-    gap: 42.45625rem;
-}
-
-#califications {
+.collapsible {
+    background-color: var(--caribe70);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    border-radius: 28px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    width: 920px;
     display: flex;
-    gap: 42.9rem;
+    align-items: center;
+    gap: 700px;
 }
 
-.drop-info {
-    display: flex;
-    gap: 730px;
+
+
+.content {
+    padding: 0 18px;
+    max-height: 0px;
+    height: 175px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: var(--caribe35);
+    border-radius: 28px;
+    margin-top: 5px;
+
+}
+
+.coll-title {
+    color: var(--Tech, var(--Azul-Profundo, #0B0033));
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .info {
+    color: var(--Violet, #6100FF);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.collapsible-text {
+    max-height: 1px;
+    width: 888px;
+    overflow: hidden;
+    border-radius: 28px;
+    line-height: normal;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3 ease;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.drop-text,
+.d-text {
+    color: var(--Tech, var(--Azul-Profundo, #0B0033));
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.drop-text {
+    margin: 20px 20px 5px 20px;
+}
+
+.d-text {
+    margin: 0px 20px 10px 20px;
+}
+
+.text {
+    margin: 20px 20px 5px 20px;
+    color: var(--violet);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.collapsible input:checked~.collapsible-text {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: rgba(28, 187, 196, 0.35);
+    opacity: 1;
+    top: 0;
+    margin-top: 5px;
+}
+
+.go-btn {
+    color: var(--white);
+    background-color: var(--orange);
+    border: none;
+    z-index: 2;
+    width: 116px;
+    height: 24px;
+    padding: 18px;
     display: flex;
-    gap: .125rem;
-    margin: 10px 0px;
-}
-
-.group {
-    height: 20px;
-}
-
-.project {
-    color: var(--tech);
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px -1px rgba(11, 0, 51, 0.40);
+    font-size: 16px;
+    font-style: normal;
     font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin: 0px 20px;
 }
 
-.status {
-    color: var(--violet)
+.video_feed {
+    background-color: rgba(28, 187, 196, 0.70);
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
 }
-
-.collapse-drop {
-    display: none;
-}
-
 
 .grid-wrapper {
     float: right;
@@ -197,9 +277,6 @@ h3 {
     margin: auto;
 }
 
-.video-feed {
-    margin-top: 1.25rem;
-}
 
 
 .video-grid {
@@ -229,7 +306,7 @@ iframe {
     border-radius: 10px;
 }
 
-.main-det{
+.main-det {
     display: flex;
     flex-direction: row;
     gap: 100px;
@@ -246,7 +323,7 @@ iframe {
 
 }
 
-.author-profile{
+.author-profile {
     width: 38.125rem;
     height: 11.25rem;
     background-color: #0B0033;
@@ -257,27 +334,27 @@ iframe {
     gap: 90px;
 }
 
-.author-profile p{
+.author-profile p {
     color: #fff;
 }
 
-.profile-info{
+.profile-info {
     display: flex;
     align-items: center;
     gap: .625rem;
     margin: 30px;
 }
 
-.det-info{
+.det-info {
     display: flex;
     flex-direction: column;
 }
 
-.name{
+.name {
     font-weight: 700;
 }
 
-.follow-btn{
+.follow-btn {
     background-color: #6100FF;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
@@ -294,14 +371,14 @@ iframe {
 
 }
 
-.url-info{
+.url-info {
     width: 38.125rem;
     height: 40px;
     border-radius: 10px;
     margin-top: 45px;
 }
 
-.play-icon{
+.play-icon {
     position: absolute;
 }
 
@@ -332,8 +409,8 @@ iframe {
         display: none;
     }
 
-    .dropdown{
-        width:27.75rem;
+    .dropdown {
+        width: 27.75rem;
     }
 
     .drop-title {
@@ -391,6 +468,7 @@ iframe {
         padding: 30px;
         height: auto;
     }
+
     .bienvenida p {
         text-align: center;
     }
@@ -430,11 +508,11 @@ iframe {
         gap: 190px;
     }
 
-    #title-d{
+    #title-d {
         gap: 6.75rem;
     }
 
-   
+
     #califications {
         width: min-content;
         gap: 8.5rem;
@@ -443,46 +521,56 @@ iframe {
 
 }
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 340px) {
     nav {
         gap: 4.875rem;
         justify-content: center;
     }
+
     #logo-edvisto {
         margin-left: 0px;
         height: 35px;
     }
+
     .bannermodulo {
         max-inline-size: 231px;
         max-block-size: 262px;
         margin: 2.1875rem;
     }
+
     .bienvenida p {
         font-weight: 400;
         margin: auto;
         text-align: center;
     }
+
     .notifications-panel {
         margin-bottom: 40px;
     }
+
     .dropdown {
         width: min-content;
         max-width: 200px;
     }
+
     .drop-title {
         width: 100%;
         gap: 2.625rem;
     }
+
     .drop-info {
         gap: 85px;
     }
+
     #title-d {
         gap: 4.75rem;
     }
+
     #califications {
         width: min-content;
         gap: 1.9rem;
     }
+
     iframe {
         width: 100%;
         max-width: 90%;

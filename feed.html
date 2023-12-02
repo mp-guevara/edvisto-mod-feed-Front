@@ -15,10 +15,12 @@
 
     <header>
         <nav>
-            <img src="./assets/img/Ed_logo_rectangle 1 (Traced).svg" alt="Logo EdVisto" title="Logo EdVisto"  id="logo-edvisto">
+            <img src="./assets/img/Ed_logo_rectangle 1 (Traced).svg" alt="Logo EdVisto" title="Logo EdVisto"
+                id="logo-edvisto">
             <section class="profile">
                 <h2 id="modulo">¡Hola, Juan!</h2>
-                <img src="./assets/img/profile.svg" alt="Icono del perfil" aria-label="Icono del perfil"  class="icono-perfil">
+                <img src="./assets/img/profile.svg" alt="Icono del perfil" aria-label="Icono del perfil"
+                    class="icono-perfil">
                 <img src="./assets/img/arrow-profile.svg" alt="Icono desplegable perfil"
                     aria-label="Desplegar opciones del perfil" width="24px" height="24px">
 
@@ -28,53 +30,64 @@
     <main>
         <div class="bannermodulo" id="banner">
             <div class="bienvenida" id="bienvenida">
-                <h3>¡Bienvenido a la Plataforma!</h3>
-                <p>Aquí podras hacer la investigación para tu proyecto, y luego te ayudaremos a revisar si tienes toda la información que necesitas ¡Diviertete explorando!</p>
+                <h3>¡Bienvenido a EdVisto!</h3>
+                <p>Aquí podrás hacer la investigación para tu proyecto, y luego te ayudaremos a revisar si tienes toda
+                    la información que necesitas. ¡Diviértete explorando!</p>
             </div>
-                <img id="asistente"  src="./assets/img/perrito_profesor.svg" alt="Avatar EdVisto" width="242px" height="367px">
-        </div>    
-        <div class="notifications-panel">
-            <div class="dropdown">
-                <div class="drop-title">
-                    <p class="project">Proyecto: Pingüinos</p>
-                    <img src="./assets/img/Vector (Stroke).svg" alt="flecha dropdown" class="dropdown-arrow">
-                </div>
-                <div class="drop-info">
-                    <p class="status">Estado:</p>
+            <img id="asistente" src="./assets/img/perrito_profesor.svg" alt="Avatar EdVisto" width="242px"
+                height="367px">
+        </div>
+        <div id="studentProjects">
+
+        </div>
+        
+        <div class="wrapper">
+            <button class="collapsible" type="button">
+                <div class="coll-title">    
+                    Proyecto:
                     <div class="info">
-                        <img src="./assets/img/group.svg" alt="icono grupo" class="group-icon"> <span>2/5</span>
+                        <p>Fecha de inicio: </p>
+                        <p>Fecha de finalización:</p>
                     </div>
                 </div>
+                <img src="../assets/img/collapsible-arrow.svg" alt="flecha hacia abajo">
+            </button>
+            <div class="content">
+                <p class="drop-text">¡Sigue adelante con tu proyecto!</p>
+                <p class="d-text">¡Adelántate y cumple tu meta a tiempo!</p>
+                <p class="text">Haz click en el botón para seguir trabajando </p>
+                <a href="/busqueda.html">
+                    <button type="button" aria-label="boton ir" class="go-btn">¡Vamos!<img
+                            src="./assets/img/arrow-right.svg" alt="flecha hacia la derecha"></button>
+                </a>
             </div>
-            <div class="dropdown">
-                <div class="drop-title" id="title-d">
-                    <p class="project">Proyecto: Abejitas</p>
-                    <img src="./assets/img/Vector (Stroke).svg" alt="flecha dropdown" class="dropdown-arrow">
-                </div>
-                <div class="drop-info">
-                    <p class="status">Estado:</p>
+        </div>
+        <div class="wrapper">
+            <button class="collapsible" type="button">
+                <div class="coll-title">    
+                    Proyecto:
                     <div class="info">
-                        <img src="./assets/img/group.svg" alt="icono grupo" class="group-icon"> <span>2/5</span>
+                        <p>Fecha de inicio: </p>
+                        <p>Fecha de finalización:</p>
                     </div>
                 </div>
-                
-                
+                <img src="../assets/img/collapsible-arrow.svg" alt="flecha hacia abajo">
+            </button>
+            <div class="content">
+                <p class="drop-text">¡Sigue adelante con tu proyecto!</p>
+                <p class="d-text">¡Adelántate y cumple tu meta a tiempo!</p>
+                <p class="text">Haz click en el botón para seguir trabajando </p>
+                <a href="/busqueda.html">
+                    <button type="button" aria-label="boton ir" class="go-btn">¡Vamos!<img
+                            src="./assets/img/arrow-right.svg" alt="flecha hacia la derecha"></button>
+                </a>
             </div>
-            <div class="dropdown">
-                <div  id="califications">
-                    <p class="project">Mis calificaciones</p>
-                    <img src="./assets/img/Vector (Stroke).svg" alt="flecha dropdown" class="dropdown-arrow">
-                </div>
-                <div class="drop-info">
-                    <p class="status">Estado:</p>
-                    <div class="info">
-                        <img src="./assets/img/group.svg" alt="icono grupo" class="group-icon"> <span>2/5</span>
-                    </div>
-                </div>
-            </div>
-        </div> 
-           
-       
+        </div>
+
+
+
+
+
         <div class="video_feed">
             <div class="grid-wrapper">
                 <div class="video-grid"></div>
@@ -85,7 +98,7 @@
 
 
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
