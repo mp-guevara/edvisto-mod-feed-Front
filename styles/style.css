@@ -229,14 +229,7 @@ h3 {
     line-height: normal;
 }
 
-.collapsible input:checked~.collapsible-text {
-    max-height: 300px;
-    padding-bottom: 25px;
-    background: rgba(28, 187, 196, 0.35);
-    opacity: 1;
-    top: 0;
-    margin-top: 5px;
-}
+
 
 .go-btn {
     color: var(--white);
@@ -269,7 +262,7 @@ h3 {
 
 .grid-wrapper {
     float: right;
-    width: 64.75rem;
+    width: 59.75rem;
     max-height: 35rem;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -390,13 +383,22 @@ iframe {
     }
 
     .bannermodulo {
-        max-inline-size: 600px;
-        max-block-size: 200px;
+        height: 156px;
+        width: 505px;
         margin: 2.1875rem;
     }
 
     .bienvenida {
         left: 0rem;
+        padding: 15px 0px;
+    }
+    .bienvenida h3{
+        text-align:center;
+        margin-top: 33px;
+    }
+
+    .bienvenida p{
+        display: none;
     }
 
     #asistente {
@@ -409,29 +411,12 @@ iframe {
         display: none;
     }
 
-    .dropdown {
-        width: 27.75rem;
+    .collapsible{
+        width: 550px;
+        gap: 340px;
     }
 
-    .drop-title {
-        width: 100%;
-        gap: 320px;
-    }
-
-    #califications {
-        width: 100%;
-        gap: 16rem;
-    }
-
-    .drop-info {
-        display: flex;
-        gap: 323px;
-    }
-
-    #title-d {
-        gap: 16.456249999999997rem;
-    }
-
+    
     .video_feed {
         width: 100%;
     }
@@ -458,14 +443,12 @@ iframe {
 
 @media screen and (max-width: 767px) {
     .bannermodulo {
-        max-inline-size: 330px;
-        max-block-size: 205px;
-        margin: 2.1875rem;
+        width: 364px;
+        margin: 1.1875rem;
     }
 
     .bienvenida {
-        width: max-content;
-        padding: 30px;
+        padding: 10px;
         height: auto;
     }
 
@@ -494,29 +477,32 @@ iframe {
         height: 45px;
     }
 
-    .dropdown {
-        width: min-content;
-        max-width: 300px;
+    
+
+    .collapsible{
+        width: 338px;
+        gap: 201px;
     }
 
-    .drop-title {
-        width: 100%;
-        gap: 9.625rem;
+    .coll-title{
+        font-size: 20px;
     }
 
-    .drop-info {
-        gap: 190px;
+    .info{
+        display: none;
     }
 
-    #title-d {
-        gap: 6.75rem;
+    .content{
+        width:300px
     }
 
+   .drop-text, .d-text{
+    display: none;
+   }
 
-    #califications {
-        width: min-content;
-        gap: 8.5rem;
-    }
+   .text{
+    margin-top: 40px;
+   }
 
 
 }
@@ -533,44 +519,19 @@ iframe {
     }
 
     .bannermodulo {
-        max-inline-size: 231px;
-        max-block-size: 262px;
-        margin: 2.1875rem;
+     width: 300px;
     }
 
-    .bienvenida p {
-        font-weight: 400;
-        margin: auto;
-        text-align: center;
+    .collapsible{
+        width: 290px;
+        gap: 140px;
     }
 
-    .notifications-panel {
-        margin-bottom: 40px;
+    .content{
+        width:250px
     }
 
-    .dropdown {
-        width: min-content;
-        max-width: 200px;
-    }
-
-    .drop-title {
-        width: 100%;
-        gap: 2.625rem;
-    }
-
-    .drop-info {
-        gap: 85px;
-    }
-
-    #title-d {
-        gap: 4.75rem;
-    }
-
-    #califications {
-        width: min-content;
-        gap: 1.9rem;
-    }
-
+    
     iframe {
         width: 100%;
         max-width: 90%;
