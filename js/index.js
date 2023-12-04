@@ -108,7 +108,13 @@ fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&q=${randomSear
       createYouTubePlayer(videoContainer, videoId);
     });
   })
-  .catch(error => console.error('Error fetching data from YouTube API:', error));
+  .catch(error => {
+    console.error('Error fetching data from YouTube API:', error);
+    if (error.message.includes('403 Forbidden')) {
+      alert('has alcanzado la cuota máxima de videos or día.');
+    }
+  });
+
 
 function createYouTubePlayer(container, videoId) {
 
