@@ -154,7 +154,8 @@ h3 {
     width: 920px;
     display: flex;
     align-items: center;
-    gap: 700px;
+    gap: 581px;
+    justify-content: space-between;
 }
 
 
@@ -413,7 +414,8 @@ iframe {
 
     .collapsible{
         width: 550px;
-        gap: 340px;
+        gap: 210px;
+        justify-content: space-between;
     }
 
     
@@ -450,6 +452,8 @@ iframe {
     .bienvenida {
         padding: 10px;
         height: auto;
+        border-radius: 20px;
+        width: 245px;
     }
 
     .bienvenida p {
@@ -481,7 +485,7 @@ iframe {
 
     .collapsible{
         width: 338px;
-        gap: 201px;
+        gap: 49px;
     }
 
     .coll-title{
@@ -523,12 +527,28 @@ iframe {
     }
 
     .collapsible{
-        width: 290px;
-        gap: 140px;
+        width: 270px;
+        gap: 3px;
+        margin: auto;
+    }
+
+    .coll-title{
+        font-size: 16px;
+    }
+
+    #arrow-down{
+        width: 15px;
     }
 
     .content{
-        width:250px
+        width: 230px;
+        margin: 5px auto;
+        height: 147px;
+    }
+
+    .text{
+        font-size: 16px;
+        margin-bottom: 10px;
     }
 
     

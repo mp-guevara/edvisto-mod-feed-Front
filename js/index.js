@@ -1,4 +1,4 @@
-const urlProjects = 'http://127.0.0.1:3000/api/projects?course=QuintoA&emailStudents=some1@example.com';
+const urlProjects = 'http://127.0.0.1:3000/api/projects?course=SegundoA&emailStudents=sarasofiaramirez@example.com';
 
  async function fetchStudentProjects() {
   try {
@@ -31,7 +31,7 @@ const urlProjects = 'http://127.0.0.1:3000/api/projects?course=QuintoA&emailStud
                         <p>Fecha de finalización:${project.finishDate} </p>
                     </div>
                 </div>
-                <img src="../assets/img/collapsible-arrow.svg" alt="flecha hacia abajo">
+                <img src="../assets/img/collapsible-arrow.svg" alt="flecha hacia abajo" id="arrow-down">
             </button>
             <div class="content">
                 <p class="drop-text">¡Sigue adelante con tu proyecto!</p>
@@ -51,26 +51,23 @@ const urlProjects = 'http://127.0.0.1:3000/api/projects?course=QuintoA&emailStud
 
     console.log('Projects rendered successfully.');
 
+    document.querySelectorAll('.collapsible').forEach((collapsible) => {
+      collapsible.addEventListener('click', function () {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'rem';
+        }
+      });
+    });
+
   } catch (error) {
     console.error('Error al cargar los proyectos', error);
   }
 } 
 
-
-const coll = document.getElementsByClassName("collapsible");
-let i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    const content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight =  "180px";
-    } 
-  });
-}
 
 fetchStudentProjects()
 
